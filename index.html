@@ -13,12 +13,23 @@
     <link rel="modulepreload" crossorigin href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gInJlYWN0LWRvbS9jbGllbnQiOwppbXBvcnQgIi4vaW5kZXguY3NzIjsKaW1wb3J0IEFwcCBmcm9tICIuL0FwcC50c3giOwoKY3JlYXRlUm9vdChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicm9vdCIpISkucmVuZGVyKAogIDxTdHJpY3RNb2RlPgogICAgPEFwcCAvPgogIDwvU3RyaWN0TW9kZT4sCik7Cg==">
     <link rel="stylesheet" crossorigin href="/assets/index-BQvR85EE.css">
     <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        background: #FFFFF2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .petsense-header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
-        margin-bottom: 20px;
       }
       .petsense-logo {
         height: 80px;
@@ -37,6 +48,7 @@
         color: #431313;
         font-weight: 500;
         margin-top: 8px;
+        margin-bottom: 20px;
       }
       .coming-soon {
         text-align: center;
@@ -44,18 +56,26 @@
         font-size: 1.4rem;
         color: #A76C2C;
         font-weight: 600;
-        margin-bottom: 32px;
+        margin-bottom: 0;
+      }
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <div class="petsense-header">
-      <img src="/group 6.svg" alt="PetSense Logo" class="petsense-logo" />
-      <div class="petsense-subtitle">Your AI Veterinarian</div>
+    <div class="center-container">
+      <div class="petsense-header">
+        <img src="/group 6.svg" alt="PetSense Logo" class="petsense-logo" />
+        <div class="petsense-title">PetSense</div>
+        <div class="petsense-subtitle">Your AI Veterinarian</div>
+      </div>
+      <div class="coming-soon">
+        Coming soon...
+      </div>
+      <div id="root"></div>
     </div>
-    <div class="coming-soon">
-      Coming soon...
-    </div>
-    <div id="root"></div>
   </body>
 </html>
